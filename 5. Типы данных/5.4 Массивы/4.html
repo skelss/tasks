@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body>
+    <script>
+
+    function sumInput(){
+    let sum = 0
+    let arr = []
+
+    while(1){
+        let num = prompt('Введите число:', 0)
+        if(num === null || num === '' || !isFinite(num))
+            break;
+        arr.push(Number(num))
+    }
+
+    for(let elem of arr){
+        sum += elem
+    }
+    return sum
+    }
+
+    alert(sumInput())
+
+    </script>
+</body>
